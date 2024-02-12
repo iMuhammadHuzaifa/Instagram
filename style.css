@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    width: 18vw;
+    height: 100vh;
+    border-right: 2px solid #dbdbdb;
+    position: fixed;
+    background-color: white;
+}
+
+.left .container {
+    padding: 7vh 1.8vw 0 1.8vw;
+}
+
+.left .container .big-logo {
+    width: 60%;
+}
+
+.left .container .small-logo {
+    display: none;
+}
+
+.left .container .items-container {
+    margin-top: 2vh !important;
+}
+
+.left .container .items-container .items {
+    display: flex;
+    align-items: center;
+    margin: 5.5vh 0;
+}
+.left .container .items-container .items :hover{
+    cursor: pointer;
+}
+
+.left .container .items-container .items img {
+    width: 12%;
+}
+
+#profile{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.left .container .items-container .items p {
+    padding-left: 1vw;
+    font-size: 1.2vw;
+}
+
+.bottom {
+    position: relative;
+    left: 18vw;
+    width: 55vw;
+    height: 100vh;
+}
+
+.bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.bottom .container .table_1 {
+    margin-bottom: 3vh;
+}
+
+.bottom .container .table_1 td {
+    padding: 0 0.4vw;
+}
+
+.bottom .container .gradient-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.3vw;
+    height: 4.3vw;
+    background-color: #0f9bf7;
+    border-radius: 50%;
+}
+
+.bottom .container .white-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bottom .container .table_1 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 91%;
+    height: 91%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bottom .container .table_1 .name {
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+.bottom .container .table_2 {
+    width: 35vw;
+}
+
+.bottom .container .table_2 .gradient-bg {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.bottom .container .table_2 .white-bg {
+    width: 91%;
+    height: 91%;
+}
+
+.bottom .container .table_2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 91%;
+    height: 91%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bottom .container .table_2 .name {
+    font-size: 0.95vw;
+    padding-left: 0.6vw;
+}
+
+.bottom .container .table_2 .name span {
+    color: grey;
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.bottom .container .table_2 .switch {
+    margin-right: 0.5vw;
+    width: 0.8vw;
+    font-size: 1.6vw;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 1000px) {
+    .bottom .container .table_2 .switch {
+        font-weight: bolder;
+    }
+}
+
+.bottom .container .post {
+    margin-top: 1.5vh;
+
+}
+
+.bottom .container .post img {
+    width: 35vw;
+    border-radius: 2.3%;
+}
+
+.bottom .container .post img:hover{
+    cursor: pointer;
+}
+
+.bottom .container .table_3 {
+    width: 35vw;
+    margin-top: 2vh;
+}
+
+.bottom .container .table_3 img {
+    width: 65%;
+}
+
+.bottom .container .likes {
+    padding-top: 0.2vw;
+    padding-left: 0.2vw;
+    text-align: left;
+    width: 35vw;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.right {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 20vw;
+    width: 20vw;
+    height: 100vh;
+}
+
+.right .container {
+    padding-top: 6vh;
+    margin-right: 2vw;
+}
+
+.right .container img {
+    width: 3.3vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+}
+
+.right .container .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9vw;
+    width: 12vw;
+    padding-left: 0.6vw;
+}
+
+.right .container .name b {
+    cursor: pointer;
+}
+
+.right .container .switch {
+    text-align: right;
+    font-size: 0.9vw;
+    width: 5vw;
+    color: #0f9bf7;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.right .container .suggested-for-you {
+    margin-top: 2.5vh;
+    font-size: 1vw;
+    color: grey;
+    font-weight: 700;
+}
+
+.right .container .see-all {
+    margin-top: 2.5vh;
+    text-align: right;
+    font-size: 0.9vw;
+    width: 5vw;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.right .container .follow {
+    text-align: right;
+    font-size: 0.9vw;
+    width: 5vw;
+    color: #0f9bf7;
+    font-weight: 700;
+    cursor: pointer;
+}
